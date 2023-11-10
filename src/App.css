@@ -1,6 +1,43 @@
 .App {
   text-align: center;
+  
 }
+
+.logo {
+  height: 400px;
+  width: 600px;
+}
+.square {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  font-size: x-large;
+  
+}
+.board-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 0;
+
+}
+
+.status{
+  font-size: x-large;
+  color: palevioletred;
+}
+
+.restart-button {
+  background-color: blue;
+  color: black;
+  padding: 20px 40px; /* Increase padding for a larger button */
+  width: 20000px; /* Increase width for a wider button */
+  height: 60px; /* Increase height for a taller button */
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+
 
 .App-logo {
   height: 40vmin;
