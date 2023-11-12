@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  
 }
 
 .logo {
@@ -28,16 +27,15 @@
 
 .restart-button {
   background-color: blue;
-  color: black;
-  padding: 20px 40px; /* Increase padding for a larger button */
-  width: 20000px; /* Increase width for a wider button */
-  height: 60px; /* Increase height for a taller button */
+  color: white;
+  font-weight: 600;
+  padding: 10px 40px; /* Increase padding for a larger button */
+  width: 10%; /* Increase width for a wider button */
   border: none;
   cursor: pointer;
   border-radius: 40px;
+  margin-top: 10px;
 }
-
-
 
 .App-logo {
   height: 40vmin;

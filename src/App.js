@@ -17,7 +17,6 @@ function App() {
         return squares[a];
       }
     }
-
     return null;
   };
 
@@ -37,7 +36,7 @@ function App() {
   };
 
   const renderSquare = (i) => (
-    <button className="square" onClick={() => handleClick(i)}>
+    <button className="square" onClick={() => handleClick(i)} key={i}>
       {board[i]}
     </button>
   );
