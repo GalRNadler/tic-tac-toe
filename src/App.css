@@ -3,13 +3,13 @@
 }
 
 .logo {
-  height: 400px;
-  width: 600px;
+  height: 350px;
+  width: 550px;
 }
 .square {
-  width: 100px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
-  font-size: x-large;
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  font-size: xx-large;
   
 }
 .board-row {
@@ -21,20 +21,25 @@
 }
 
 .status{
-  font-size: x-large;
-  color: palevioletred;
+  font-size: 300%;
+  color: rgba(233, 174, 171, 0.712);
+  margin-bottom: 10px;
+  
 }
 
 .restart-button {
-  background-color: blue;
-  color: white;
+  background-color: rgba(233, 174, 171, 0.712);
+  color: rgb(9, 8, 8);
   font-weight: 600;
-  padding: 10px 40px; /* Increase padding for a larger button */
+  font-size: 120%;
+  padding: 20px 50px; /* Increase padding for a larger button */
   width: 10%; /* Increase width for a wider button */
   border: none;
   cursor: pointer;
-  border-radius: 40px;
+  border-radius: 80px;
   margin-top: 10px;
+  text-align: center;
+  
 }
 
 .App-logo {
