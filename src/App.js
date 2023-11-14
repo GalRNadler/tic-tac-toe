@@ -9,8 +9,21 @@ function App() {
   const [xIsNext, setXIsNext] = useState(true);
   const [gameOver, setGameOver] = useState(false);
   const [winner, setWinner] = useState(null);
+  const [status, setStatus] = useState(xIsNext ? "Next player: X" : "Next player: O");
+  const [isTie, setTie] = useState(false);
 
-  useEffect(() => {}, [board]);
+  function calculateTie() {
+    if (!board.includes(null) && !gameOver) {
+      setGameOver(true);
+      setTie(true);
+      setXIsNext(true);
+      setStatus('Its a TIE');
+    }
+  }
+
+  useEffect(calculateTie, [board]);
+
+  
 
   const calculateWinner = (squares) => {
     for (let i = 0; i < lines.length; i++) {
@@ -33,11 +46,19 @@ function App() {
     newBoard[index] = xIsNext ? "X" : "O";
     setBoard(newBoard);
     setXIsNext(!xIsNext);
+    setStatus ( winner
+    ? `Winner: ${winner}`
+    : `Next player: ${xIsNext ? "O" : "X"}`);
 
     const gameResult = calculateWinner(newBoard);
     if (gameResult) {
       setWinner(gameResult);
       setGameOver(true);
+      setStatus(`Winner: ${gameResult}`);
+      setXIsNext(true);
+      
+
+      
     }
   };
 
@@ -47,15 +68,15 @@ function App() {
     </button>
   );
 
-  const status = winner
-    ? `Winner: ${winner}`
-    : `Next player: ${xIsNext ? "X" : "O"}`;
+  
 
   const handleRestart = () => {
     setBoard(Array(9).fill(null));
     setXIsNext(true);
     setWinner(null);
     setGameOver(false);
+    setStatus (`Next player: ${xIsNext ? "X" : "O"}`)
+
   };
 
   return (
