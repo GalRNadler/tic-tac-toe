@@ -10,21 +10,18 @@
   width: 150px; /* Adjust the width as needed */
   height: 150px; /* Adjust the height as needed */
   font-size: xx-large;
-  
 }
 .board-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0px 0;
-
 }
 
-.status{
+.status {
   font-size: 300%;
   color: rgba(233, 174, 171, 0.712);
   margin-bottom: 10px;
-  
 }
 
 .restart-button {
@@ -39,7 +36,6 @@
   border-radius: 80px;
   margin-top: 10px;
   text-align: center;
-  
 }
 
 .App-logo {
